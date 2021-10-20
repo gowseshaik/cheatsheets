@@ -102,11 +102,13 @@ Curl has no timeout by default	curl --connect-timeout 10 -I -k https://www.googl
 Curl get with extra headers	curl --verbose --header "Host: www.mytest.com:8182" www.google.com
 Curl get response with headers	curl -k -v https://www.google.com
 ```
-
+```
 1.2 CURL POST
 Name	Command
 Curl post request	curl -d "name=username&password=123456" <URL>
 Curl post send json	curl <URL> -H "content-type: application/json" -d "{ \"woof\": \"bark\"}"
+```
+```
 1.3 CURL ADVANCED
 Name	Command
 Get my public ip	curl -L -s http://ipecho.net/plain, curl -L -s http://whatismijnip.nl
@@ -117,18 +119,25 @@ Curl with http2	curl -k -v --http2 https://www.google.com/
 Curl ftp upload	curl -T cryptopp552.zip -u test:test ftp://10.32.99.187/
 Curl ftp download	curl -u test:test ftp://10.32.99.187/cryptopp552.zip -o cryptopp552.zip
 Curl upload with credential	curl -v -u admin:admin123 --upload-file package1.zip http://mysever:8081/dir/package1.zip
+```
+```
 1.4 CURL SCRIPT
 Name	Command
 Install packages with curl	curl-install-package.sh
 Check a website response time	curl-url-time.sh
 Beautify json output for curl response	curl-format-json.sh
 Curl run remote scripts	curl-remote-scripts.sh
+```
+```
 1.5 WGET
 Name	Command
 Download one url	wget -O /tmp/google.html https://google.com
 Download mutiple urls	wget https://google.com https://bing.com
 Download a list of urls	wget -i url-list.txt, url-list.txt
+```
+```
 1.6 MORE RESOURCES
 License: Code is licencurl under MIT License.
 
 http://curl.haxx.se
+```
