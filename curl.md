@@ -91,7 +91,7 @@ curl -F person=anonymous -F secret=@file.txt http://example.com/submit.cgi
 # details: https://matthewsetter.com/check-if-file-is-available-with-curl/
 curl -o /dev/null --silent -Iw "%{http_code}" https://example.com/my.remote.tarball.gz
 ```
-
+```
 1.1 CURL GET/HEAD
 Name	Command
 Curl head request	curl -I https://www.google.com
@@ -101,6 +101,8 @@ Curl without http proxy	curl --noproxy 127.0.0.1 http://www.stackoverflow.com
 Curl has no timeout by default	curl --connect-timeout 10 -I -k https://www.google.com
 Curl get with extra headers	curl --verbose --header "Host: www.mytest.com:8182" www.google.com
 Curl get response with headers	curl -k -v https://www.google.com
+```
+
 1.2 CURL POST
 Name	Command
 Curl post request	curl -d "name=username&password=123456" <URL>
