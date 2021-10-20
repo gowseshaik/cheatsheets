@@ -151,9 +151,8 @@ Curl get response with headers	curl -k -v https://www.google.com
 ```
 1.5 WGET
 ```
-| Name                                   | Command                 |
-|----------------------------------------|-------------------------|
-| Install packages with curl             | curl-install-package.sh |
-| Check a website response time          | curl-url-time.sh        |
-| Beautify json output for curl response | curl-format-json.sh     |
-| Curl run remote scripts                | curl-remote-scripts.sh  |
+| Name                    | Command                                     |
+|-------------------------|---------------------------------------------|
+| Download one url        | wget -O /tmp/google.html https://google.com |
+| Download mutiple urls   | wget https://google.com https://bing.com    |
+| Download a list of urls | wget -i url-list.txt, url-list.txt          |
